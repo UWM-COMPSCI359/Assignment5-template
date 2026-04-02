@@ -24,7 +24,7 @@ if __name__ == '__main__':
     mesh = Mesh.from_stl("unit_sphere.stl", diffuse_color, specular_color, ka, kd, ks, p)
 
     renderer = Renderer(screen, camera, mesh, light)
-    renderer.render("flat", [80,80,80], [0.2, 0.2, 0.2])
+    renderer.render("flat", np.array([80,80,80]), np.array([0.2, 0.2, 0.2]))
 
     screen.show()
 
